@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "airbnb-411310",
+  "private_key_id": "c046b4ca54605802d8cbb8bc59256e14881077da",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEuwIBADANBgkqhkiG9w0BAQEFAASCBKUwggShAgEAAoIBAQDeg6eQ/Jza91H0\nI59saU7JbDcH7hwcZ7Jm4Dz7ukAFqVsZMPjZBHIP3ujNiBWzvGC5tahqtThtKMOG\ndtp+ulf9I/W8hRzAuVX2VcUMgMBc99OswSuGO2QuR0KkdYvlajb07eVVNGdlSls5\nAPLSwwvlOw+4hlq2b6Bvo0t3a/YgASnj0aLI7l4EeWVuQFfB6Qs1WDrn5rtPVs/U\nhezXLMbl2SwPmsxq2CM+nGtsyqCVq7JjFdE5T/Ac+3+UPhkJe8sjtvm3qwgbg6F8\nAMrPB6o1g4Jmrp+DSN0zV5FbhiMnObnrgjduuWWGMmt7jpz2m/sfwjI7NxQ25PI0\nL4fpYTM3AgMBAAECggEADDJMh3TUymdSsDdSwfK0obqk+nITZ++fJp+HBmt3uuXv\nhexol3O7mFqpF5y6nK+vUgWwk//e6CIpbJUsEo2+dyXajpIcY1oo22f3rif8DfHR\nXm2h7xsuR63FJLKRLEABDkRD6m0+BZ4vwk4fq941fdH9YX7IOan2B0wK9rCNyxnc\n1mvFJ4cC6ZLQNjU3jTWL6/c9V9LR6sOJ2NuwqhjWtLIyehJHgW2auARi5lTG8xPk\nKRtMZHuwwWlXe2xujOpP6p37HDHhpJFkXrUYmM8aTZ/VIKs7xENh/j+PrFTf7jCp\nFXauJqxXV3lG88RrV3NM1WPHpRNmRi4ILWrXg75K4QKBgQDyQl90Gx7ktZh2zfD7\nwwWh649MHA2ZhAvN8M1xNFCtvdz84LxeDBpaHkqebvnCXKa5NcekGCDgo4cp3kLi\nH5R9cmI6okVFTHBiruoH03USF3vWs5IRfEwy62fb+mp77ylSsjvnuURIPr3qR0PX\nAuLBSs2+SbjWN0GxRnY7DdElnwKBgQDrIpUh6skjt3fCm0x+hVvI1YIlAjg/8fUc\n+UKEkUDLRdohi11UNoAbbL9vpXxuPG2Akqa1Flh66UEmepWDX0lyjsBD6L8fhDh5\nT4Kot2a5/Nep4+T8CHkPVFo3P26OLzuL7KBGfYzykJ+9e8KkKnT3JFUHzAc+gPAx\nx80wIr8baQKBgQC7cYeRunpI1AlHw0i2Q8tT4YNajEopgfXwPmV3NddG1yTptKmK\nyyqIl+98brlpHW8S1v3FhbXKmjy2tHZjp7Oo7Jv8ahnW6LH8aQJDU+W9PdZf5Ukb\npmT+8Q3HMxa5Fe+PQMEBJmQi0gj4AHQJJP52OH7AwSH2/YIivDY2sxYkWQJ/Jahk\nOgpgLFg11fUJSzoQeRm4vjSczaDyoLFK9fBNcEC/rp+jUtlnqvy/rCHUy9LhtrXF\n/TqW8RhqVr9LMr8QBEjYggfElEeYw9T4GA1HZoIYCB13juXMfagEytRd4GewIbjD\n8oYpDLAc5Tvs8F3cXbhz5cvHXTtJPK/DLPJjqQKBgHy94F5+UNtDB7wzUjjYzS5X\n6pCO0RicR+khtq+M94Ym0H6ILQctxIi5qKJD7/GGA5/H6nISHu0aqHnjl94djrqx\nD1n3FdaOURaQp7o5NkmcMuPctUnWZZw/Ea6hzXDJuztG8DZB36QdPiPG/Z4ee3fL\n7rV64rtVz2ZWg2bC1eQ2\n-----END PRIVATE KEY-----\n",
+  "client_email": "islam-836@airbnb-411310.iam.gserviceaccount.com",
+  "client_id": "105206087796595289361",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/islam-836%40airbnb-411310.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

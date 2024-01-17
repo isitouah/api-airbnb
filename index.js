@@ -1,5 +1,4 @@
 const express = require('express');
-const cors = require('cors');
 const mongoose = require("mongoose");
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
@@ -13,8 +12,15 @@ const multer = require('multer');
 const fs = require('fs');
 const mime = require('mime-types');
 const punycode = require('punycode/');
+const path = require('path');
+const process = require('process');
+const {authenticate} = require('@google-cloud/local-auth');
+const {google} = require('googleapis');
+const apikeys = require('./apiKey.json')
+const cors = require('cors')
 
-// require('dotenv').config();
+
+
 const app = express();
 
 const bcryptSalt = bcrypt.genSaltSync(10);
@@ -33,6 +39,58 @@ mongoose.set('strictQuery', false);
 mongoose.connect(
   "mongodb+srv://isitouah0:test123@cluster0.8d6lcbu.mongodb.net/?retryWrites=true&w=majority"
 );
+
+
+
+
+
+const SCOPE = ['https://www.googleapis.com/auth/drive'];
+
+// A Function that can provide access to google drive api
+async function authorize(){
+    const jwtClient = new google.auth.JWT(
+        apikeys.client_email,
+        null,
+        apikeys.private_key,
+        SCOPE
+    );
+
+    await jwtClient.authorize();
+
+    return jwtClient;
+}
+
+// A Function that will upload the desired file to google drive folder
+async function uploadFile(authClient){
+    return new Promise((resolve,rejected)=>{
+        const drive = google.drive({version:'v3',auth:authClient}); 
+
+        var fileMetaData = {
+            name:'mydrivetext.txt',    
+            parents:['1owFNPRjyAL5HhgTQysK54MQeTlxKqpXB?hl=fr'] // A folder ID to which file will get uploaded
+        }
+
+        drive.files.create({
+            resource:fileMetaData,
+            media:{
+                body: fs.createReadStream('mydrivetext.txt'), // files that will get uploaded
+                mimeType:'text/plain'
+            },
+            fields:'id'
+        },function(error,file){
+            if(error){
+                return rejected(error)
+            }
+            resolve(file);
+        })
+    });
+}
+
+authorize().then(uploadFile).catch("error",console.error()); // function call
+
+
+
+// ______________________________________________________________________________________________________________________________________
 
 
 async function uploadToS3(path, originalFilename, mimetype) {
